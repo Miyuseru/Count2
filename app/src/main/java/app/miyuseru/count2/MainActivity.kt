@@ -8,10 +8,8 @@ class MainActivity : AppCompatActivity() {
 
     var number = 0
 
-    constructor() : super()
 //    var number :Int = 0
-
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,6 +18,13 @@ class MainActivity : AppCompatActivity() {
         button1.setOnClickListener{
 
             number = number +1
+            countText.text = number.toString()
+
+
+        }
+        button2.setOnClickListener{
+
+            number = number - 1
             countText.text = number.toString()
 
 
